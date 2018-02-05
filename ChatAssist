@@ -1,0 +1,94 @@
+{
+	"config": {
+		"preset": "default",
+		"theme": "jsassist",
+		"allowExternalSource": false,
+		"allowEmoticon": true,
+		"ignoreMQEmoticon": true,
+		"ignoreNickname": "(臾댁떆?좊땳?ㅼ엫 ,濡?援щ텇?댁꽌 ?낅젰)",
+		"enableTwitchEmoticon": true,
+		"TwitchEmoticonsize": "1.0",
+		"streamer": {
+			"twitch": "(첼리띠)",
+			"kakaopot": "(移댁뭅?ㅻ땳?ㅼ엫)",
+			"youtube": "(?좏뒠釉뚯콈?먮챸)"
+		},
+		"chat": {
+			"platformIcon": true,
+			"platform": "all",
+			"animation": "fade",
+			"chatFade": 0,
+			"font": "Jeju Gothic",
+			"fontUsernameSize": 14,
+			"fontUsernameColor": "255, 255, 255",
+			"fontChatSize": 16,
+			"fontChatColor": "255, 255, 255",
+			"backgroundColor": "255, 255, 255",
+			"backgroundAlpha": 0,
+			"chatBackgroundColor": "200, 200, 200",
+			"chatBackgroundAlpha": 25
+		},
+		"themes": {
+			"jsassist": {
+				"css": [],
+				"js": [],
+				"image": {
+					"streamer": "",
+					"moderator": ""
+				}
+			}
+		}
+	},
+	"plugins": {
+		"command": {
+			"use": false
+		},
+		"dccon": {
+			"use": true,
+			"config": {
+				"address": "https://lastorder-dc.github.io/ChatAssistX-Client/dccon.json",
+				"twitch": "https://cdn.rawgit.com/Lastorder-DC/dccon/v180125/global.json",
+				"twitch_sub": "https://cdn.rawgit.com/Lastorder-DC/dccon/v180125/sub.json"
+			}
+		},
+		"style": {
+			"use": true
+		},
+		"replace" : {
+			"use": true,
+			"config": {
+				"replace_list": {
+					"諛붽?留?": "諛붽퓭吏덈쭚1",
+					"諛붽?留?": "諛붽퓭吏덈쭚2"
+				}
+			}
+		},
+		"block" : {
+			"use": true,
+			"config": {
+				"block_list": {
+					"?섏걶留?": "keyword",
+					"?섏걶?됰꽕??": "nickname",
+					"?섏걶留?": "keyword",
+					"?섏걶?됰꽕??": "nickname"
+				}
+			}
+		}
+	},
+	"provider": {
+		"JSAssist": {
+			"use": true,
+			"config": {
+				"oauth": "",
+				"do_not_use_tapic": false,
+				"channelname": "lastorder_dc"
+			}
+		},
+		"mixer": {
+			"use": false,
+			"config": {
+				"channelid": 164900
+			}
+		}
+	}
+}
